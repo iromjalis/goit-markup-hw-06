@@ -1,2 +1,2 @@
-# iromjalis-goit-markup-hw-06
-iromjalis / goit-markup-hw-06
+# goit-markup-hw-06
+goit-markup-hw-06
