@@ -91,6 +91,7 @@ header .flex.container{
   padding-top: 25px;
   padding-bottom: 25px;
   height: 80px;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .icon-WebStudio,
@@ -99,6 +100,7 @@ header .flex.container{
   height: 31px;
   margin-right: 93px;
 }
+
 
 .nav-list-item:not(:last-child),
 .address .contacts:not(:last-child){
@@ -136,7 +138,6 @@ align-items: center;
   height: 4px;
   background-color:var(--accent-color);
   border-radius: 4px;
-  margin-top: 28px;
 }
 
 .contacts{
