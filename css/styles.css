@@ -182,6 +182,7 @@ header .flex.container{
 /* ===  МОДАЛЬНОЕ ОКНО ===*/
 .backdrop{
   position: fixed;
+  display: inline-block;
   top: 0;
   left: 0;
 
@@ -197,10 +198,10 @@ header .flex.container{
   pointer-events: none;
 }
 .modal{
+  display: flex;  
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate( -50%, -50%);
 
   
@@ -261,9 +262,11 @@ textarea{
 }
 
 .form-field label{
+  position: relative;
   Font-Size: 14px;
   Line-Height: 1.714;
-  Letter-Spacing: 3%;
+  width: 415px;
+  margin: 0;
 }
 
 .group-title{
@@ -275,6 +278,18 @@ textarea{
 
   color: #212121;
   margin-bottom: 12px;
+}
+
+.form-label{
+  position: absolute;
+  top:0;
+  left:15px;
+  transform: translate(0, -150%)
+}
+/*placeholder и иконка внутри поля при hover синяя*/
+.form-field:focus + .form-label{
+  transform: translate(0, -100%)
+
 }
 /* === END FORM ===*/
 
@@ -520,7 +535,6 @@ textarea{
 .team-list-item .container-social-team{
   display: flex;
   justify-content: center;
-
 }
 .name{
   font-weight: 500;
@@ -774,7 +788,7 @@ strong{
    display: flex;
    justify-content: center;
  }
-.subscription-form input{
+.subscription-form .colortext{
   display: inline-block;
   margin-top: 20px;
   width: 358px;
@@ -785,7 +799,7 @@ strong{
 
 }
 
-INPUT[type="email"]{
+.colortext{
   background-color: #2F303A;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -793,7 +807,6 @@ INPUT[type="email"]{
   margin-top: 0;
 }
 .colortext{
-  border: 1px solid rgba(255, 255, 255, 0.3);
 box-sizing: border-box;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
