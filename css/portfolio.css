@@ -1,19 +1,51 @@
 /* === ОБЩИЕ НАСТРОЙКИ ===*/
 *,
 *::before,
-**::after, main, ul{
+**::after, {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-*:hover{
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+button,
+*:focus{
+  cursor: pointer;
+  background-color: transparent;
+}
+link{
+  text-decoration: none;
 }
 
-html{
-  box-sizing: inherit;
+address{
+  font-style: normal;
 }
+
+img{
+  display: block;
+  border: 1px solid transparent;
+}
+
+ul, 
+.list, h1, h2, h3, h4{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.visually-hidden{
+ position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 :root{
   --text-color: #757575;
   --title-color: #212121;
@@ -23,18 +55,21 @@ html{
   --main-bg: #E5E5E5;
   --team-bg: #F5F4FA;
   --header-bg: #ffffff;
-  --address-color: #rgba(255, 255, 255, 0.6);
+  --address-color: #rgba(255, 255, 255, 0.6)
+  --partner-border: #AFB1B8;
 }
 
-
-.logo{
-  content:""
+body{
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--header-bg);
+  color: var(--text-color);
 }
 
-img{
-  display: block;
-  border: 1px solid transparent;
-}
 .container{
   width: 1200px;
   padding: 0 15px;
@@ -53,6 +88,7 @@ header{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
 }
 
 header .flex.container{
@@ -62,7 +98,10 @@ header .flex.container{
   height: 80px;
 }
 
-.logo{
+.icon-WebStudio,
+.icon-Web-Studio-footer{
+  width: 145px;
+  height: 31px;
   margin-right: 93px;
 }
 
@@ -76,16 +115,21 @@ header .flex.container{
 .nav:visited{
   color: var(--title-color);
 }
+.nav-list-item .link{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .link:hover,
 .link:focus,
 .current,
 .contacts:hover,
 .contacts:focus{
-  color: var(--accent-color)
+  fill: var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
-.current.link{
+.current{
   margin-top: 32px;
 }
 
@@ -97,10 +141,13 @@ header .flex.container{
   width: 100%;
   height: 4px;
   background-color:var(--accent-color);
+  border-radius: 4px;
 }
 
 .contacts{
   color:var(--text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header .address{
@@ -130,14 +177,7 @@ header .flex.container{
   align-items: center;
 }
 
-.icon-envelope:hover,
-.icon-envelope:focus,
-.icon-tel:hover,
-.icon-tel:focus{
-  fill: #2196F3;
-  cursor: pointer;
 
-}
 /* === END HEADER ===*/
 
 
