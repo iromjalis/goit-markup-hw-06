@@ -100,7 +100,8 @@ header .flex.container{
   height: 31px;
   margin-right: 93px;
 }
-
+ .link.current{
+}
 
 .nav-list-item:not(:last-child),
 .address .contacts:not(:last-child){
