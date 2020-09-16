@@ -362,9 +362,40 @@ a.contract{
 .form-input:focus,
 .form-input:hover,
 textarea:focus,
-textarea:hover{
+textarea:hove, .checkbox:hover, .checkbox:focus{
   border-color: var(--accent-color);
 }
+/* ===CHECKBOX ===*/
+/*  .checkbox{
+  -webkit-appearance: none;
+  position: absolute;
+} */
+
+ .label{
+  position: relative;
+  top:0;
+  left:0;
+  display: inline;
+}
+
+.checkbox-icon{
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.checkbox:checked +.icon{
+ background-image: url(../images/SVG/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border: 2px solid var(--accent-color);
+  border: none;
+}
+
+
+/* === END CHECKBOX ===*/
+
 /* === END FORM ===*/
 
 /* === HERO ===*/
