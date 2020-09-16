@@ -352,6 +352,7 @@ a.contract{
   justify-content: center;
   border: 1px solid var(--accent-color);
   margin: 0 auto;
+  margin-top: 30px;
   background-color: var(--accent-color);
   color: var(--white-color);
   border-radius: 4px;
@@ -362,7 +363,7 @@ a.contract{
 .form-input:focus,
 .form-input:hover,
 textarea:focus,
-textarea:hove, .checkbox:hover, .checkbox:focus{
+textarea:hove, .checkbox:checked, .checkbox:focus{
   border-color: var(--accent-color);
 }
 /* ===CHECKBOX ===*/
@@ -392,7 +393,6 @@ textarea:hove, .checkbox:hover, .checkbox:focus{
   border: 2px solid var(--accent-color);
   border: none;
 }
-
 
 /* === END CHECKBOX ===*/
 
