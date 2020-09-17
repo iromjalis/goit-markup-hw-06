@@ -809,7 +809,7 @@ textarea:hove, .checkbox:checked, .checkbox:focus{
   background-position: 50% 50%;
 }
 
-/* === FOOTER === */
+
 .icon-Web-Studio-footer{
   fill: var(--accent-color);
 }
@@ -828,10 +828,12 @@ textarea:hove, .checkbox:checked, .checkbox:focus{
 }
 
 .subscribe{
+  display: flex;
 width: 206px;
 grid-template: 80px;
 margin-left: 70px;
 margin-right: 93px;
+margin-top: 72px;
 }
 
 .container-social-team{
@@ -845,6 +847,8 @@ margin-right: 93px;
 /*ul*/
 .social-list{
   display: flex;
+  margin-left: 70px;  
+  margin-right: 93px;
 }
 
 /*li*/
@@ -943,8 +947,10 @@ color: var(--white-color);
 .sub{
   margin:0;
   padding:0;
-  align-items: center;
-  margin-top: 10px;
+}
+.btn-text{
+  display: flex;
+  margin-right: 10px;
 }
 .sub.hero-btn img{
   display: flex;
