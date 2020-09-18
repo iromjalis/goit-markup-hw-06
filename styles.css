@@ -229,6 +229,10 @@ align-items: center;
   margin: 14px;
 }
 
+a:hover>.close, a:focus>.close{
+  border-color: var(--accent-color);
+
+}
 
 /* ===  КОНЕЦ МОДАЛЬНОГО ОКНА  ===*/
 
@@ -263,6 +267,7 @@ align-items: center;
   left:0px;
   margin-left: 42px;
 }
+
 .form-input:focus +.form-label,
 .form-input:not(:placeholder-shown) +.form-label{
 transform: translateY(-50px);
@@ -270,6 +275,7 @@ fill: var(--accent-color);
 border-color:  var(--accent-color);
 color: var(--accent-color);
 cursor: pointer;
+outline: none;
 }
 
 .form-input:placeholder-shown{
