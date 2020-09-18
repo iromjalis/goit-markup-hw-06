@@ -828,12 +828,13 @@ textarea:hove, .checkbox:checked, .checkbox:focus{
 }
 
 .subscribe{
-  display: flex;
+display: flex;
 width: 206px;
 grid-template: 80px;
 margin-left: 70px;
 margin-right: 93px;
 margin-top: 72px;
+margin-bottom: 100px;
 }
 
 .container-social-team{
@@ -855,7 +856,6 @@ margin-top: 72px;
 .social-list-item{
   display: flex;
   margin: 0 auto;
-  
 }
 
 /*a*/
