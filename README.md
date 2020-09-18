@@ -1,3 +1,3 @@
-# goit-markup-hw-06
-Домашнее задание #6
-https://iromjalis.github.io/goit-markup-hw-06/index.html
+# goit-markup-hw-04
+Домашнее задание #4
+https://iromjalis.github.io/goit-markup-hw-04/
