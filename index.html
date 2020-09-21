@@ -54,78 +54,80 @@
 
     <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <a href="" data-modal-close>
-            <img class="close" src="./images/SVG/close-black.svg" alt="крест">
-            </a>
-
-            <!--   Форма в модалке   -->
-             <form class="group">
-                <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
-                        <p class="group-title-item">Имя</p>
-                    <label for="" class="form-field">
-                        <input 
-                        type="text" 
-                        class="form-input"
-                        name="name" 
-                        placeholder=" ">
-                        <span class="form-label">Имя</span>
-                        <svg class="icon" width="12px">
-                            <use href="./images/SVG/symbol-defs.svg#icon-person"></use>
-                        </svg>
-                    </label>
-
-                    <p class="group-title-item">Телефон</p>
-                    <label for="" class="form-field">
-                        <input 
-                        type="tel" 
-                        class="form-input"
-                        name="name" 
-                        placeholder=" ">
-                        <span class="form-label">Телефон</span>
-                        <svg class="icon" width=" 13px">
-                            <use href="./images/SVG/symbol-defs.svg#icon-trubka"></use>
-                        </svg>
-                    </label>
-
-                    <p class="group-title-item">Почта</p>
-                    <label for="" class="form-field">
-                        <input 
-                        type="mail" 
-                        class="form-input"
-                        name="name" 
-                        placeholder=" ">
-                        <span class="form-label">Почта</span>
-                        <svg class="icon" width=" 15px" height="12px">
-                            <use href="./images/SVG/symbol-defs.svg#icon-envelope-black"></use>
-                        </svg>
-                    </label>
-
-                    <p class="group-title-item">Комментарий</p>
-                    <label for="" class="form-field">
-                        <textarea
-                        class="textarea-input"
-                        name="comment"
-                        rows="5"
-                        cols="45"
-                        placeholder=" "
-                        ></textarea>
-                        <span class="form-label text">Введите текст</span>
-                    </label>
-                    
-                    <label class="label">
-                    <input class="checkbox" name="topic" type="checkbox" value="contract-title" />
-                     Соглашаюсь с рассылкой и принимаю 
-                     <a href="" class="contract">
-                         <u>Условия договора</u>
-                    </a>
-                    <span class="checkbox-icon"></span>
-                    </label>
-
-                    <button submit="submit" class="send-btn">Отправить</button>
-                    <br>
-            </form> 
-
+        <div class="pop-ups">
+            <div class="modal">
+                <a href="" data-modal-close>
+                <img class="close" src="./images/SVG/close-black.svg" alt="крест">
+                </a>
+    
+                <!--   Форма в модалке   -->
+                 <form class="group">
+                    <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
+                            <p class="group-title-item">Имя</p>
+                        <label for="" class="form-field">
+                            <input 
+                            type="text" 
+                            class="form-input"
+                            name="name" 
+                            placeholder=" ">
+                            <span class="form-label">Имя</span>
+                            <svg class="icon" width="12px">
+                                <use href="./images/SVG/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </label>
+    
+                        <p class="group-title-item">Телефон</p>
+                        <label for="" class="form-field">
+                            <input 
+                            type="tel" 
+                            class="form-input"
+                            name="name" 
+                            placeholder=" ">
+                            <span class="form-label">Телефон</span>
+                            <svg class="icon" width=" 13px">
+                                <use href="./images/SVG/symbol-defs.svg#icon-trubka"></use>
+                            </svg>
+                        </label>
+    
+                        <p class="group-title-item">Почта</p>
+                        <label for="" class="form-field">
+                            <input 
+                            type="mail" 
+                            class="form-input"
+                            name="name" 
+                            placeholder=" ">
+                            <span class="form-label">Почта</span>
+                            <svg class="icon" width=" 15px" height="12px">
+                                <use href="./images/SVG/symbol-defs.svg#icon-envelope-black"></use>
+                            </svg>
+                        </label>
+    
+                        <p class="group-title-item">Комментарий</p>
+                        <label for="" class="form-field">
+                            <textarea
+                            class="textarea-input"
+                            name="comment"
+                            rows="5"
+                            cols="45"
+                            placeholder=" "
+                            ></textarea>
+                            <span class="form-label text">Введите текст</span>
+                        </label>
+                        
+                        <label class="label">
+                        <input class="checkbox" name="topic" type="checkbox" value="contract-title" />
+                         Соглашаюсь с рассылкой и принимаю 
+                         <a href="" class="contract">
+                             <u>Условия договора</u>
+                        </a>
+                        <span class="checkbox-icon"></span>
+                        </label>
+    
+                        <button submit="submit" class="send-btn">Отправить</button>
+                        <br>
+                </form> 
+    
+            </div>
         </div>
     </div>
 
