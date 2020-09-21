@@ -29,7 +29,6 @@ ul,
   list-style: none;
 }
 
-
 .visually-hidden{
  position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -128,6 +127,9 @@ header .flex.container{
 
 .nav-list.flex{
 align-items: center;
+}
+.link.current{
+  margin-top: 0;
 }
 
 .link.current::after{

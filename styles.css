@@ -134,7 +134,7 @@ header .flex.container{
 align-items: center;
 }
 
-.link.current::after{
+.link::after{
   display:block;
   margin: 0 auto;
   content: "";
