@@ -298,6 +298,7 @@ cursor: pointer;
   background-color: white;
 }
 
+
 textarea{
   resize: none;
 }
@@ -369,8 +370,57 @@ cursor: pointer;
 }
 
 .checkbox{
-  background-color: var(--accent-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  overflow: hidden;
 }
+
+
+
+.checkbox::before{
+  content:"";
+  display:inline-block;
+  border: 1px solid rgb(163, 158, 158);
+  border-radius: 4px;
+  width: 16px;
+  height: 15px;
+  margin-top: 3px;
+  background-color: transparent;
+  vertical-align: middle;
+  
+  transition: transform 250ms ease;
+}
+/* .checkbox:hover::before{
+  transform: translatey(-35px);
+} */
+
+.checkbox::after{
+  position:absolute;
+  top: 2px;
+  left: 0px;
+  content:"";
+  border: 1px solid black;
+  border-radius: 4px;
+  display:inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/SVG/icon-check.svg);
+  transform: translatey( +35px);
+  
+  transition: transform 250ms ease;
+}
+
+.checkbox:checked::after{
+  transform: translatey(0);
+}
+
+.checkbox-text{
+  margin-left: 23px;
+}
+/* === END CHECKBOX ===*/
+
 .contract-title{
   margin-bottom: 30px;
 }
