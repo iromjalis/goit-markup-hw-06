@@ -254,6 +254,10 @@ header .flex.container{
 /* ===  КОНЕЦ МОДАЛЬНОГО ОКНА  ===*/
 
 /* === FORM === */
+input:hover, input:focus,
+textarea:hover, textarea:focus{
+  border-color: var(--accent-color);
+}
 
 .group{
   width: 528px;
@@ -350,10 +354,11 @@ cursor: pointer;
   margin-bottom: 12px;
 }
 
-.group-title-item:nth-child(){
-  padding: 0;
+.group-title-item{
+  margin: 0;
   margin-bottom: 4px;
 }
+
 .form-label.text{
   display: inline-block;
   position: absolute;
@@ -431,7 +436,7 @@ a.contract{
   display: flex;
   justify-content: center;
   border: 1px solid var(--accent-color);
-  margin: 0 auto;
+  margin: 0 132px;
   margin-top: 30px;
   background-color: var(--accent-color);
   color: var(--white-color);
