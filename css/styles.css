@@ -1,10 +1,7 @@
 
-transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-
 *,
 *::before,
-**::after, {
+**::after{
   padding: 0;
   margin: 0;
 }
@@ -119,7 +116,7 @@ header .flex.container{
   position: relative;
 
   transition-property: color, fill;
-  transition-duration: :250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link,
@@ -153,7 +150,7 @@ header .flex.container{
 .contacts{
   color:var(--text-color);
   transition-property: color, fill;
-  transition-duration: :250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 25px 0;
 }
@@ -174,8 +171,8 @@ header .flex.container{
   margin-right: 10px;
   align-items: center;
   fill: var(--text-color);
-  vertical-align: middle;
-}
+/*   vertical-align: middle;
+ */}
 
 .icon-tel{
   display: block;
@@ -351,8 +348,8 @@ cursor: pointer;
   color: var(--title-color);
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
-}
+/*   margin-bottom: 12px;
+ */}
 
 .group-title-item{
   margin: 0;
