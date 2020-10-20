@@ -812,6 +812,10 @@ textarea:hove,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-icon-footer{
+  fill: #fff;
+}
+
 .social-link:hover,
 .social-link:focus,
 .social-link:hover .social-icon,
